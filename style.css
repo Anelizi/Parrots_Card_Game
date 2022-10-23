@@ -63,11 +63,11 @@ img{
     transition: all 5s;
 }
 
-.virar .tras{
+.tras{
     transform: rotateY(0deg);
 }
 
-.virar .frente{
+.frente{
     transform: rotateY(180deg);
 }
 
