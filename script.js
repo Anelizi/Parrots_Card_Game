@@ -44,7 +44,19 @@ function Jogo(){
     aleatorio.sort(comparar);
 
     //colocar as cartas no HTML
-    
+    for (let index = 0; index < numeCartas; index++) {
+        let cartasHTML = document.querySelector('main');
+        cartasHTML.innerHTML += `
+            <div class="cartas" onclick="clickCarta(this.querySelector('.tras'), this.querySelector('.frente'),this)">
+                <div class="face tras">
+                    <img src="./img/back.png">
+                </div>
+                <div class="face frente">
+                    <img src=${arrayJogo[index]}>
+                </div>
+            </div>
+        `
+    }
 }
 Jogo();
 
