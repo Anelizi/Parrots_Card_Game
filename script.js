@@ -105,7 +105,7 @@ function clickCarta(tras, frente, carta) {
 
             combinar++;
 
-            setTimeout(i,2000);
+            setTimeout(vitoria,2000);
 
             return;
         }
@@ -141,9 +141,14 @@ function duasCartas(){
     }, 1000)
 }
 
-
-function vidoria(){
-
+// Vitoria
+function vitoria(){
+    if((parseInt(combinar)*2 === numeCartas)){
+        alert(`Você ganhou em ${mover} jogadas!`);
+        Jogo();
+    }
 }
+
+//Fazendo Bonus
 
 Jogo();
