@@ -60,7 +60,7 @@ img{
     border-radius: 5px;
     backface-visibility: hidden;
     transform-style: preserve-3d;
-    transition: all 5s;
+    transition: all .5s;
 }
 
 .tras{
@@ -71,6 +71,28 @@ img{
     transform: rotateY(180deg);
 }
 
+.clickCartaTrue{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    z-index: -1;
+}
+
+.clickCartaFalse{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: none;
+    z-index: 1;
+}
+
 @media screen and (min-width: 320px) and  (max-width:767px) {
-    
+    main{
+        width: 100%;
+    }
 }
